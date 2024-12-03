@@ -1,0 +1,46 @@
+/* src/pages/Home.css */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f5f5f5; /* Cor de fundo suave */
+    text-align: center;
+}
+
+.logo {
+    width: 10px; /* Ajuste o tamanho da logomarca conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 20px; /* Espaço abaixo da logomarca */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333; /* Cor do texto */
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0; /* Margem entre o título e a descrição */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}

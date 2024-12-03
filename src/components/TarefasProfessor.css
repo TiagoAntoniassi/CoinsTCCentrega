@@ -1,0 +1,68 @@
+.tarefas-professor-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.form-tarefa label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-tarefa input,
+.form-tarefa textarea,
+.form-tarefa select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tarefa-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.tarefa-item h3 {
+    margin: 0;
+}
+
+.feedback {
+    color: green;
+    margin-top: 10px;
+}
+
+.tarefas-turma {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tarefa-item:last-child {
+    border-bottom: none;
+}
+
+.tarefas-turma h3 button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #222; /* Cor azul para os ícones */
+}
+
+.tarefas-lista {
+    padding-left: 20px;
+}
+
+.tarefa-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

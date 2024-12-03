@@ -1,0 +1,76 @@
+/* Botão de Logout */
+.logout-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px; /* Estilo arredondado moderno */
+  background: linear-gradient(90deg, #e63946, #f77f00); /* Gradiente atraente */
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Sombra leve */
+}
+
+.logout-button:hover {
+  background: linear-gradient(90deg, #b82635, #d65e08); /* Mudança de gradiente */
+  transform: scale(1.05); /* Animação de destaque */
+}
+
+.logout-button:active {
+  transform: scale(0.98); /* Efeito de clique */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+}
+
+/* Link de Login */
+.login-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #61dafb;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid transparent; /* Inicialmente sem borda */
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.login-link:hover {
+  color: #ffffff;
+  background: linear-gradient(90deg, #61dafb, #4098d7);
+  border: 2px solid #61dafb; /* Destaque com borda */
+  padding: 5px 15px; /* Pequeno ajuste ao passar o mouse */
+}
+
+.login-link:active {
+  transform: scale(0.98); /* Efeito de clique */
+  background: #4098d7; /* Sólido para feedback de interação */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 20px; /* Ajuste proporcional */
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logout-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 18px; /* Ajuste proporcional */
+  }
+
+  .login-link {
+    font-size: 0.85rem;
+    padding: 3px 6px;
+    border-radius: 18px;
+  }
+}

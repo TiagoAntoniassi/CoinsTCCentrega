@@ -1,0 +1,108 @@
+/* cadastro.css */
+
+/* Estilos gerais para o container do cadastro */
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garantir que o container ocupe toda a altura da tela */
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Adicionar espaçamento em dispositivos móveis */
+}
+
+/* Estilo do formulário de cadastro */
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ajustar a largura para dispositivos móveis */
+    max-width: 500px; /* Definindo a largura máxima do formulário */
+    background-color: #fff;
+    padding: 20px; /* Reduzindo padding em telas menores */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das labels */
+.cadastro-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem; /* Ajustar tamanho para leitura em dispositivos móveis */
+}
+
+/* Estilo dos inputs */
+.cadastro-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+.cadastro-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastro-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do título do formulário */
+.cadastro-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Estilo para feedback de sucesso ou erro */
+.feedback {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.feedback.success {
+    color: green;
+}
+
+.feedback.error {
+    color: red;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cadastro-container {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .cadastro-form {
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+
+    .cadastro-title {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .cadastro-form label {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+
+    .cadastro-form input {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos inputs */
+    }
+
+    .cadastro-form button {
+        font-size: 0.9rem; /* Reduz o tamanho do botão */
+        padding: 10px; /* Ajusta o padding do botão */
+    }
+}

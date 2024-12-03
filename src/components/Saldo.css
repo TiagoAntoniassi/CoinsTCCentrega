@@ -1,0 +1,35 @@
+/* src/components/Saldo.css */
+
+/* Para saldo abaixo de 100 moedas (vermelho) */
+.low-balance {
+    color: red;
+}
+
+/* Para saldo entre 100 e 1000 moedas (verde) */
+.medium-balance {
+    color: green;
+}
+
+/* Para saldo acima de 1000 moedas, com efeito RGB */
+.high-balance {
+    animation: rgbEffect 3s linear infinite; /* Animação RGB, 3 segundos e looping infinito */
+}
+
+/* Definindo a animação RGB */
+@keyframes rgbEffect {
+    0% {
+        color: rgb(255, 0, 0); /* Vermelho */
+    }
+    25% {
+        color: rgb(0, 255, 0); /* Verde */
+    }
+    50% {
+        color: rgb(0, 0, 255); /* Azul */
+    }
+    75% {
+        color: rgb(255, 255, 0); /* Amarelo */
+    }
+    100% {
+        color: rgb(255, 0, 255); /* Magenta */
+    }
+}

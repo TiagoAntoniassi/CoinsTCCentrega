@@ -1,0 +1,55 @@
+/* Estilos gerais para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Evita que a tabela se expanda demais */
+}
+
+/* Estilos para as células da tabela */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Evita que o conteúdo saia da célula */
+}
+
+/* Estilo para os cabeçalhos */
+th {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Responsividade: transformando a tabela em uma lista para telas pequenas */
+@media (max-width: 768px) {
+    table {
+        display: block; /* Transforma a tabela em bloco */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        white-space: nowrap;
+    }
+
+    /* Modifica as células para exibição de "bloco" */
+    tr {
+        display: block;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        font-size: 0.9rem;
+        padding-left: 50%; /* Garante que o label se sobreponha ao conteúdo */
+        position: relative;
+    }
+
+    td::before {
+        /* Adiciona os rótulos customizados para cada célula */
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+}

@@ -1,0 +1,53 @@
+/* Estilo geral do footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px 30px;
+    position: fixed; /* Fixa o rodapé no fundo da tela */
+    bottom: 0; /* Coloca o footer no rodapé */
+    left: 0; /* Garante que ele ocupe toda a largura da tela */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out; /* Transição suave para a visibilidade */
+    z-index: 1000; /* Garante que o footer esteja acima de outros elementos */
+}
+
+/* Estilo do texto dentro do footer */
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Classe adicional para quando o rodapé está visível */
+.footer.visible {
+    opacity: 1; /* Torna o rodapé completamente visível */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 20px; /* Reduzindo o padding para telas médias */
+        font-size: 0.85rem; /* Fontes menores em telas médias */
+    }
+
+    .footer p {
+        font-size: 0.9rem; /* Reduzindo o tamanho da fonte do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 15px; /* Reduzindo ainda mais o padding para telas pequenas */
+        font-size: 0.8rem; /* Fonte ainda menor em telas pequenas */
+    }
+
+    .footer p {
+        font-size: 0.85rem; /* Ajuste no tamanho da fonte para dispositivos pequenos */
+    }
+}

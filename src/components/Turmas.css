@@ -1,0 +1,148 @@
+/* src/components/Turmas.css */
+
+/* Estilo geral para a seção de turmas */
+.turmas {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para os formulários */
+.turma-form,
+.aluno-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.turma-form input,
+.aluno-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.turma-form button,
+.aluno-form button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.turma-form button:hover,
+.aluno-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para a lista de turmas */
+.turma-list {
+    margin-top: 20px;
+}
+
+.turma-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do cabeçalho da turma */
+.turma-item h3 {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Detalhes da turma */
+.turma-details {
+    margin-top: 10px;
+}
+
+/* Lista de alunos na turma */
+.turma-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.turma-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.turma-details li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.turma-details li button:hover {
+    background-color: #c0392b;
+}
+
+/* Campo de pesquisa */
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Resultados de pesquisa */
+.search-results {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.search-result button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-result button:hover {
+    background-color: #45a049;
+}
